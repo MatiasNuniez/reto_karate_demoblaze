@@ -11,16 +11,6 @@ function fn() {
     demoblazePaths: {
       signup: '/signup',
       login: '/login'
-    },
-    auth: {
-      type: karate.properties['auth.type'] || 'bearer',
-      token: karate.properties['auth.token'],
-      tokenUrl: karate.properties['auth.tokenUrl'],
-      clientId: karate.properties['auth.clientId'],
-      clientSecret: karate.properties['auth.clientSecret'],
-      username: karate.properties['auth.username'],
-      password: karate.properties['auth.password'],
-      loginPath: karate.properties['auth.loginPath']
     }
   };
 
