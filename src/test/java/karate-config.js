@@ -7,6 +7,11 @@ function fn() {
       || karate.properties['qa.baseUrl']
       || karate.properties['baseUrl']
       || 'http://localhost:8080',
+    demoblazeBaseUrl: karate.properties['demoblaze.baseUrl'] || 'https://api.demoblaze.com',
+    demoblazePaths: {
+      signup: '/signup',
+      login: '/login'
+    },
     auth: {
       type: karate.properties['auth.type'] || 'bearer',
       token: karate.properties['auth.token'],
